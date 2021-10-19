@@ -1,0 +1,18 @@
+.addItem {
+  border: none;
+  border-bottom: 1px solid rgb(136, 136, 136);
+  padding: 6px;
+  width: 380px;
+  margin-right: 15px;
+}
+
+#add-task {
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .addItem {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+.nav-link {
+  color: #fafafa !important;
+  padding-bottom: 0;
+}
+
+.nav-link:hover {
+  color: #fdbb05 !important;
+}
+
+.active-link,
+.selected {
+  color: #fded05 !important;
+}
+
+.top {
+  margin-top: 4rem;
+}
+
+.edit-link {
+  color: #000;
+}
+
+.edit-link:hover {
+  color: #fdbb05;
+}
+
+.meter-row:hover {
+  background-color: rgb(231, 231, 231);
+}
+
+
+/* footer */
+#footer {
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
