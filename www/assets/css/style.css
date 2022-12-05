@@ -45,7 +45,22 @@ html {
 /* footer */
 #footer {
   height: 50px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  width: 100%;
+  
+  color: #fafafa;
+}
+
+/* Weather API */
+.weather-widget {
+  background-color: rgb(48, 128, 248);
+  border: 1px solid #689ff1;
+  border-radius: 10px;
+  padding: 8px;
+  color: #fafafa;
+  height: 200px;
+  width: 350px;
+}
+
+.city-name {
+  font-size: x-large;
 }

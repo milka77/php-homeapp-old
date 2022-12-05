@@ -3,6 +3,9 @@
 include('includes/header.php');
 require_once('../db_config.php');
 
+// Items in the shopping list
+$queryItems = "SELECT * FROM shoppinglist";
+$items = $db_connection->query($queryItems);
 
 // Add new item to the shopping list
 if(isset($_POST['add-task'])) {
@@ -24,9 +27,7 @@ if(isset($_POST['add-task'])) {
   echo "Item added succesfully.";
 }
 
-// Items in the shopping list
-$queryItems = "SELECT * FROM shoppinglist";
-$items = $db_connection->query($queryItems);
+
 
 ?>
 

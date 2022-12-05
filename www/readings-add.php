@@ -59,7 +59,11 @@ if(isset($_POST['submit'])) {
     $lastReading = $lastReading->fetch(PDO::FETCH_ASSOC);
 
     //Counting the difference between new and last reading
-    $difference = $reading - $lastReading['reading'];
+    if(!empty($lastReading)){
+      $difference = $reading - $lastReading['reading'];
+    } else {
+      $difference = 0;
+    }
 
     //database query
     $query = "INSERT INTO $meterType (id, reading, date, difference)

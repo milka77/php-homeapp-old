@@ -1,8 +1,8 @@
-<footer id="footer">
-  <div class="row bg-dark">
-    <div class="col-6 text-center">
+<footer id="footer" class="fixed-bottom bg-dark mt-4">
+  <div class="row">
+    <div class="col text-center">
       &copy; 2021 Krisztian Keseru
     </div>
-    <div class="col-6"></div>
+    
   </div>
 </footer>

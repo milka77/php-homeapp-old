@@ -1,3 +1,4 @@
+
 <?php
 
 require_once('../db_config.php');
@@ -26,6 +27,7 @@ if(isset($_POST['submit'])){
     //Closing DB connection
     $db_connection = NULL;
 
+    header('location: vegan-food.php');
     echo "Your new Soup was added to the database!";
   
   } else {
@@ -50,13 +52,4 @@ if(isset($_POST['submit'])){
   }
 
 }
-
-
-$filtered = str_replace(", ", ",", $ingredients);
-echo $filtered . "<br>";
-$pieces = preg_split("/[,]+/", $filtered);
-
-echo "<pre>";
-print_r($pieces);
-
 ?>

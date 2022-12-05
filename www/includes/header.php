@@ -39,7 +39,7 @@
     <ul class="navbar-nav mr-auto">
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Meater Readings
+          Meter Readings
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="readings.php">Readings</a>
@@ -68,9 +68,22 @@
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
       </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="iracing.php">iRacing</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Blizzard APi
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="blizzardapi.php">Blizzard Api</a>
+          <a class="dropdown-item" href="blizzardapi-guild.php">Blizzard Api - Guild</a>
+        </div>
+      </li><li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Weather API
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="weather_api.php">Weather API</a>
+          <a class="dropdown-item" href="weather_api_result.php">Weather API 2</a>
+        </div>
       </li>
      
       <!-- <form class="form-inline my-2 my-lg-0">
@@ -81,4 +94,4 @@
   </div>
 </nav>
 
-<div class="container-fluid">
+<div class="container pt-5">

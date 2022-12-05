@@ -34,7 +34,17 @@ $ingredients = "";
           ?>
             <tr>
               <td><?php echo $soup['name']; ?></td>
-              <td><?php echo $soup['ingredients']; ?></td>
+              <td>
+                <ul>
+                  <?php 
+                    $filtered = str_replace(", ", ",", $soup['ingredients']);
+                    $ingredients = preg_split("/[,]+/", $filtered);
+                    foreach($ingredients as $ingredient) {
+                      echo '<li>'.$ingredient.'</li>';
+                    }
+                  ?>
+                </ul>
+              </td>
               <td><a href="#" class="btn btn-outline-success">Add to shopping list</a></td>
             </tr>
           <?php 
